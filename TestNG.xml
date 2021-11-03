@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ConnectedH Automation" thread-count="10"
+	parallel="tests">
+
+	<parameter name="isBaseImage" value="false" />
+	<parameter name="expected" value="0.15" />
+
+	<listeners>
+		<listener class-name="com.connectedh.util.TestListener"></listener>
+	</listeners>
+
+	<test name="VIVO">
+		<parameter name="deviceName" value=" VIVO" />
+		<parameter name="udid" value="57548cbb" />
+		<parameter name="platformName" value="Android" />
+		<parameter name="platformVersion" value="10" />
+		<classes>
+			<class name="com.connectedh.test.ConnectedHLoginTest" />
+		</classes>
+	</test>
+
+</suite> 
